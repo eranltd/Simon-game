@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:layout_weight="1"
+    android:padding="20dp"
+	android:background="@color/background">
+    
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical" >
+
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1"
+	        android:orientation="horizontal" >
+	    
+	   		<com.eranltd.simon.ColorFragment
+	            android:id="@+id/topleft"
+	            android:background="@drawable/topleft"
+	            android:layout_weight="1"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent" />
+
+			<View
+				android:layout_width="10dp"
+				android:layout_height="match_parent" />
+			
+			<com.eranltd.simon.ColorFragment
+				android:id="@+id/topright"
+	            android:background="@drawable/topright"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent" />
+		</LinearLayout>
+
+		<View
+			android:layout_height="10dp"
+			android:layout_width="match_parent" />
+
+		<LinearLayout
+		    android:layout_weight="1"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:orientation="horizontal" >
+	   		
+	   		<com.eranltd.simon.ColorFragment
+	            android:id="@+id/bottomleft"
+	            android:background="@drawable/bottomleft"
+	            android:layout_weight="1"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent" />
+
+			<View
+				android:layout_width="10dp"
+				android:layout_height="match_parent" />
+	   			
+		    <com.eranltd.simon.ColorFragment
+	            android:id="@+id/bottomright"
+	            android:background="@drawable/bottomright"
+	            android:layout_weight="1"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent" />
+		</LinearLayout>
+	</LinearLayout>
+
+	<TextView
+        android:id="@+id/indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="X"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="@drawable/indicator"
+        android:textSize="50dp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+		
+</FrameLayout>
